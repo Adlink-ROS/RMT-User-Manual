@@ -6,7 +6,9 @@ RMT (Robot Management Tool) helps users to configure and monitor their robots re
   
   Please check the release page for the latest available packages:
   
-  https://github.com/Adlink-ROS/RMT-User-Manual/releases
+  * RMT Library: https://github.com/Adlink-ROS/RMT-User-Manual/releases
+  * RMT Server: https://github.com/Adlink-ROS/rmt_web_devkit/releases
+  * RMT Agent: https://github.com/Adlink-ROS/rmt-agent/releases
 
 ## User Manual
 
