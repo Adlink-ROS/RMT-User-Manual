@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">RMT Library
-   &#160;<span id="projectnumber">0.9.3</span>
+   &#160;<span id="projectnumber">0.9.8</span>
    </div>
   </td>
  </tr>
@@ -118,28 +118,25 @@ $(document).ready(function(){initNavTree('rmt__agent_8h_source.html',''); initRe
 <div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="struct__rmt__agent__cfg.html">   35</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct__rmt__agent__cfg.html">_rmt_agent_cfg</a> {</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">char</span> *net_interface;             <span class="comment">// NULL for default interface chosen by RMT agent</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    uint64_t device_id;              <span class="comment">// 0 for default device ID generated from MAC</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">int</span> domain_id;                   <span class="comment">// 0 for default domain ID 0</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> datainfo_val_size; <span class="comment">// 0 for default size 256</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> devinfo_size;      <span class="comment">// 0 for default size 1024</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;} <a class="code" href="struct__rmt__agent__cfg.html">rmt_agent_cfg</a>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">int</span> <a class="code" href="rmt__agent_8h.html#ae7ffc0439c28ff5f979655e6fa3d37c0">rmt_agent_configure</a>(<a class="code" href="struct__rmt__agent__cfg.html">rmt_agent_cfg</a> *config);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keywordtype">int</span> <a class="code" href="rmt__agent_8h.html#a4b61921c678b801e0d135b840b8dbbfb">rmt_agent_init</a>(devinfo_func agent_devinfo_func, <a class="code" href="structdatainfo__func.html">datainfo_func</a> *data_func_maps, <a class="code" href="structfileinfo__func.html">fileinfo_func</a> *file_func_maps);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keywordtype">int</span> <a class="code" href="rmt__agent_8h.html#a6128a088b8a2b0487fadf3e37639c4ac">rmt_agent_running</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keywordtype">int</span> <a class="code" href="rmt__agent_8h.html#ab28263288f89a5cf0fa398020d6902a7">rmt_agent_deinit</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keywordtype">char</span>* <a class="code" href="rmt__agent_8h.html#a9f1dc6491b64f75afc52a9c18ad66446">rmt_agent_version</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">/* *INDENT-OFF* */</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;} <span class="comment">/* extern &quot;C&quot; */</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#endif </span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment">/* *INDENT-ON* */</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/*_RMT_AGENT_*/</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;} <a class="code" href="struct__rmt__agent__cfg.html">rmt_agent_cfg</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">int</span> <a class="code" href="rmt__agent_8h.html#ae7ffc0439c28ff5f979655e6fa3d37c0">rmt_agent_configure</a>(<a class="code" href="struct__rmt__agent__cfg.html">rmt_agent_cfg</a> *config);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keywordtype">int</span> <a class="code" href="rmt__agent_8h.html#a4b61921c678b801e0d135b840b8dbbfb">rmt_agent_init</a>(devinfo_func agent_devinfo_func, <a class="code" href="structdatainfo__func.html">datainfo_func</a> *data_func_maps, <a class="code" href="structfileinfo__func.html">fileinfo_func</a> *file_func_maps);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keywordtype">int</span> <a class="code" href="rmt__agent_8h.html#a6128a088b8a2b0487fadf3e37639c4ac">rmt_agent_running</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keywordtype">int</span> <a class="code" href="rmt__agent_8h.html#ab28263288f89a5cf0fa398020d6902a7">rmt_agent_deinit</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keywordtype">char</span>* <a class="code" href="rmt__agent_8h.html#a9f1dc6491b64f75afc52a9c18ad66446">rmt_agent_version</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">/* *INDENT-OFF* */</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;} <span class="comment">/* extern &quot;C&quot; */</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#endif </span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">/* *INDENT-ON* */</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/*_RMT_AGENT_*/</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astruct__rmt__agent__cfg_html"><div class="ttname"><a href="struct__rmt__agent__cfg.html">_rmt_agent_cfg</a></div><div class="ttdef"><b>Definition:</b> rmt_agent.h:35</div></div>
